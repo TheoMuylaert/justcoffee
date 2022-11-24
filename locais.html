@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Coffee</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="headerx">
+        <nav>
+            <a href="index.html"><img src="links/logoJC.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="locais.html">Locais</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1 class="pageLOC">Nossos Estabelecimentos</h1>
+    </section>
+
+    <!-----content----->
+    <section>
+        <div class="containerLOC">
+            <h2>São Paulo</h2>
+            <h3>Pinheiros</h3>
+            <p>Rua dos Pinheiros, 476 - Pinheiros</p>
+            <hr class="dotted">
+            <h3>Vila Olimpia</h3>
+            <p>Rua Ministro Jesuíno Cardoso, 638 - Vila Nova Conceição</p>
+            <hr class="dotted">
+            <h3>Consolação</h3>
+            <p>Rua Frei Caneca, 929 - Consolação</p>
+            <hr class="dotted">
+            <h3>Moema</h3>
+            <p>Av. Moaci, 325 - Planalto Paulista</p>
+            <hr class="dotted">
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-----Footer----->
+    <footer>
+        <div class="footer-content">
+            <h3>Sobre Nós</h3>
+            <p>Os melhores grãos, das melhores fazendas brasileiras.</p>
+            <ul class="socials">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2022 PUC-SP. designed by <span>Chiara, Matheus and Theodoro.</span></p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <!----JavaScript menu mobile-->
+    <script>var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }</script>
+
+
+</body>
+</html>
